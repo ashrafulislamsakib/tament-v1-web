@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<div class="layout">
+    {% include "_includes/appbar.html" %}
+    <div id="main_content" class="container" >
+		{% include "_includes/sidebar.html" %}
+		<div style="flex:1;overflow:hidden;overflow-y:scroll;">
+			{% block content %}
+	
+			{% endblock %}
+		</div>
+	</div>
+	{% include "lists/modals/newList.html" with listname="create_new_list" title="Create" %}
+</div>
+{% endblock %}

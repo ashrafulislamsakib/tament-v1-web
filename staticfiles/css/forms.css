@@ -1,0 +1,108 @@
+.t-btn {
+   display:inline-block;
+   font-weight:400;
+   border:1px solid transparent;
+   padding:.375rem .75rem;
+   font-size:1rem;
+   line-height:1.5;
+   border-radius:.25rem;
+   transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.t-btn:focus,
+.t-btn:hover{
+   text-decoration:none
+}
+.t-btn.focus,
+.t-btn:focus{
+     outline:0;
+     box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
+ }
+
+.t-btn-primary{
+   color:#fff;
+   background-color:var(--tament-color);
+   border-color:var(--tament-color)
+}
+.t-btn-primary:hover{
+   color:#fff;background-color:#0069d9;border-color:#0062cc}
+.t-btn-primary.focus,
+.t-btn-primary:focus{
+    box-shadow:0 0 0 .2rem rgba(0,123,255,.5)
+}
+
+.t-input input {
+	padding:.375rem .75rem;
+	border-radius:.25rem;
+	outline:none;
+	border:none;
+	background:none;
+}
+
+.t-input input[name="title"] {
+	font-size:1rem;
+	font-weight:900;
+}
+
+.t-input input[type="date"],
+.t-input input[type="time"],
+select  {
+	font-weight:400;
+	padding:.375rem .75rem;
+	font-size:1rem;
+	line-height:1.5;
+	background:#f9f9f9;
+	border-radius:.25rem;
+	border:1px solid var(--border-color);
+}
+
+
+
+
+.form-input input {
+	border:1px solid var(--border-color);
+	padding:.375rem .75rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+}
+
+.form-input input:hover {
+	outline:0;
+	box-shadow:0 0 0 .2rem rgba(0,123,255,.25)
+}
+
+.form-check {
+	position:relative;
+	overflow:hidden;
+	width:calc(var(--navbar-size) * .8);
+	height:calc(var(--navbar-size) * .8);
+	text-align:center;
+	vertical-align:middle;
+	background:none;
+	align-items:center;
+	justify-content:center;
+}
+
+
+/* calc(calc(var(--navbar-size) * .8) *.6)    */
+
+
+.form-check .checkbox {
+	width:calc(calc(var(--navbar-size) * .8) *.6);
+	height:calc(calc(var(--navbar-size) * .8) *.6);
+	border-radius:.25rem;
+	background:none;
+	align-self:center;
+	border:2px solid var(--svg);
+}
+
+.form-check input {
+	display:none;
+}
+
+.form-check input[type="checkbox"]:checked + .checkbox{
+	background:var(--tament-color);
+	border-color:var(--tament-color);
+}
+
+

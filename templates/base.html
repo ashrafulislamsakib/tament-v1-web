@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		{% block meta %} {% endblock %}
+		<title> {% block title %} {% endblock %} - tament</title>
+		<link rel="stylesheet" href="{% static 'css/responsive.css' %}" ></link>
+		<link rel="stylesheet" href="{% static 'css/base.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/appbar.css' %}" ></link>
+		<link rel="stylesheet" href="{% static 'css/sidebar.css' %}" ></link>
+		<link rel="stylesheet" href="{% static 'css/tament.css' %}" ></link>
+		<link rel="stylesheet" href="{% static 'css/tament-icons.css' %}" ></link>
+		<style type="text/css">
+			
+			* {
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+				
+			}
+			
+		</style>
+		{% block style %}
+			
+		{% endblock %}
+	</head>
+	<body>
+		{% block body %}
+			
+		{% endblock %}
+		<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/__getCookie.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/customRequest.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/axios.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/helpers.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/tamentApi.js' %}"></script>
+		{% block js %} {% endblock %}
+	</body>
+</html>
